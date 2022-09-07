@@ -1,4 +1,6 @@
-# Next.js Docker
+# Next.js Tailwindcss Docker
+
+It is variant of [Next.js Docker](https://github.com/pavelee/next-js-docker) with ready-to-go tailwindcss.
 
 Run your next.js app in container.
 
@@ -19,3 +21,11 @@ docker-compose up -d
 ### enjoy enviorments
 - DEV -> http://localhost:3000
 - PROD -> http://localhost:3001
+
+## Rebuild production
+
+Production is optimized and not changing with files editing.
+If you would like to refresh production build, you need to rebuild docker image by command:
+```
+docker-compose up -d --build --force-recreate
+```
